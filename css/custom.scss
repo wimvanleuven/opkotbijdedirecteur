@@ -20,6 +20,13 @@ body {
 	opacity: 100%;
 }
 
+footer {
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:70px;   /* Height of the footer */
+}
+
 .title {
   font-weight: 900;
   font-size: 100px;
@@ -134,7 +141,7 @@ countdown timer section
  Social media section
  */
  .social-media-wrapper {
-	margin-top: 30px;
+	margin-top: 60px;
 	margin-bottom: 80px;
 	font-size: 25px;
 
