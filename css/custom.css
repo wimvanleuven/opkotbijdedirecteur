@@ -150,10 +150,33 @@ countdown timer section
 }
 
 /*
+ Address
+ */
+.address-wrapper {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  font-size: 25px;
+}
+
+.address-wrapper a {
+  margin-right: 40px;
+  font-size: 20px;
+  color: #ffffff;
+}
+.address-wrapper a:last-child {
+  margin-right:0;
+}
+
+.address-wrapper address {
+  margin-bottom: 0;
+  font-weight: 900;
+}
+
+/*
  Social media section
  */
 .social-media-wrapper {
-  margin-top: 60px;
+  margin-top: 0;
   margin-bottom: 80px;
   font-size: 25px;
 }
@@ -165,14 +188,14 @@ countdown timer section
 }
 
 .social-media-wrapper a:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 /*
 Footer and copyright section
 */
 .copyright {
-  margin: 30px 0px 20px 0px;
+  margin: 30px 0 20px 0;
   color: #ffffff;
 }
 

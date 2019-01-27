@@ -137,26 +137,47 @@ countdown timer section
 	}
  }
  
- /*
+/*
+ Address
+ */
+.address-wrapper {
+	margin-top: 60px;
+	margin-bottom: 80px;
+	font-size: 20px;
+
+	& a {
+		margin-right: 40px;
+		font-size: 20px;
+		color:$primary-color;
+	}
+	& a:last-child { margin-right:0; }
+
+	& address {
+		font-weight: 900;
+		margin-bottom: 0;
+	}
+}
+
+/*
  Social media section
  */
  .social-media-wrapper {
-	margin-top: 60px;
+	margin-top: 0;
 	margin-bottom: 80px;
 	font-size: 25px;
 
 	& a {
-  	margin-right: 40px;
-  	font-size: 30px;
+  	margin-right: 20px;
+  	font-size: 25px;
   	color:$primary-color;
 	}
-  & a:last-child { margin-right:0px; }
+  	& a:last-child { margin-right:0; }
 }
 
 /*
 Footer and copyright section
 */
 .copyright {
-	margin: 30px 0px 20px 0px;
+	margin: 30px 0 20px 0;
 	color: $primary-color;
 }
