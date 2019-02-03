@@ -1,28 +1,30 @@
 body {
   font-family: 'Cabin', sans-serif;
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
   color: #fff;
-  background: rgb(0,0,0);
-  background-image: url("../images/background.jpg");
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), url("../images/background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+  background: rgb(0, 0, 0) url("../images/background.jpg") no-repeat fixed center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 .transbox {
-  opacity: 100%;
+  opacity: 1.0;
+  min-height: 100%;
+}
+
+.container {
+  padding-bottom: 40px;
 }
 
 footer {
-  position:absolute;
-  bottom:0;
-  width:100%;
-  height:70px;   /* Height of the footer */
+  bottom: 0;
+  width: 100%;
+  height: 70px;   /* Height of the footer */
 }
 
 .title {
@@ -48,8 +50,8 @@ Loading section
 */
 .se-pre-con {
   position: fixed;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   z-index: 9999;
@@ -75,86 +77,11 @@ Header Section
 }
 
 /*
-countdown timer section
-*/
-#counter {
-  color: #ffffff;
-}
-
-#counter_wrapper {
-  margin: 1.3em 0px 1em;
-}
-
-.countdown-period {
-  display: block;
-  font-size: 60%;
-}
-
-.countdown-amount {
-  display: block;
-  font-size: 200%;
-}
-
-.countdown-section {
-  display: inline-block;
-  margin-right: 8%;
-}
-
-.countdown-section:last-child {
-  margin-right: 0px;
-}
-
-.subscribe-form-wrapper {
-  margin: 30px 0px 20px 0px;
-}
-
-.subscribe-form-wrapper button {
-  padding: 10px 35px;
-  border-radius: 20px;
-  border: 0;
-  outline: none;
-  font-style: italic;
-  font-weight: 700;
-  font-size: 14px;
-  color: #ffffff;
-  background-color: #ff6000;
-  transition-duration: 0.4s;
-}
-
-.subscribe-form-wrapper button:hover,
-.subscribe-form-wrapper button:focus,
-.subscribe-form-wrapper button:active:focus {
-  outline: none;
-  color: #ffffff;
-  background-color: #FF7E00;
-}
-
-.subscribe-form-wrapper input {
-  border: 0;
-  border-radius: 20px;
-}
-
-.subscribe-form-wrapper input,
-.subscribe-form-wrapper button {
-  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.3);
-}
-
-@media (min-width: 768px) {
-  .form-subs-email {
-    margin-left: 10px;
-    margin-right: 10px;
-    width:100% !important;
-  }
-}
-
-/*
  Address
  */
 .address-wrapper {
-  margin-top: 60px;
-  margin-bottom: 80px;
+  margin-top: 40px;
+  margin-bottom: 0;
   font-size: 25px;
 }
 
@@ -176,8 +103,8 @@ countdown timer section
  Social media section
  */
 .social-media-wrapper {
-  margin-top: 0;
-  margin-bottom: 80px;
+  margin-top: 40px;
+  margin-bottom: 0;
   font-size: 25px;
 }
 
@@ -198,27 +125,6 @@ Footer and copyright section
   margin: 30px 0 20px 0;
   color: #ffffff;
 }
-
-
-
-/*--- FORMS ---*/
-/*
-This is the bit you need.
-*/
-.subscribe-form-wrapper label{
-  position:absolute;
-  left:-9999px;
-}
-.subscribe-form-wrapper input,
-.subscribe-form-wrapper textarea{
-  font:inherit;
-  resize:none;
-height: 38px;
-width: 234px !important;
-}
-
-
-
 
 
 /*--- THE MAGIC ---*/
