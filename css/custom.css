@@ -1,3 +1,5 @@
+/* https://getbootstrap.com/docs/4.2/examples/sticky-footer/ */
+
 body {
   font-family: 'Cabin', sans-serif;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
@@ -7,24 +9,16 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  margin: 0;
-  padding: 0;
-  height: 100%;
 }
 
 .transbox {
   opacity: 1.0;
-  min-height: 100%;
 }
 
 .container {
-  padding-bottom: 40px;
 }
 
 footer {
-  bottom: 0;
-  width: 100%;
-  height: 70px;   /* Height of the footer */
 }
 
 .title {
@@ -43,30 +37,6 @@ h3 {
   color: #ffffff;
   font-style: italic;
   font-size: 25px;
-}
-
-/* 
-Loading section
-*/
-.se-pre-con {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background: url("../images/loading.gif") center no-repeat #032b44;
-}
-
-.no-js #loader {
-  display: none;
-}
-
-.js #loader {
-  position: absolute;
-  left: 100px;
-  top: 0;
-  display: block;
 }
 
 /*
@@ -130,7 +100,6 @@ Header Section
 Footer and copyright section
 */
 .copyright {
-  margin: 30px 0 20px 0;
   color: #ffffff;
 }
 
