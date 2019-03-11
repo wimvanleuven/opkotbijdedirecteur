@@ -5,6 +5,9 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome',
+  siteName: 'opkotbijdedirecteur',
+  siteDescription: 'opkotbijdedirecteur is op kot gaan in een historisch kader met alle luxe en comfort in ♥︎je Leuven',
+  siteUrl: 'https://opkotbijdedirecteur.be',
+  titleTemplate: '%s | <siteName>',
   plugins: []
 }
