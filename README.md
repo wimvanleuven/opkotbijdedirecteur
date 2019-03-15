@@ -9,7 +9,14 @@ Install your development environment
 1. `gridsome develop` to start local dev server at `http://localhost:8080`
 1. Happy coding 🎉🙌
 
-## Todo
+## Must do
 1. robot.txt (https://moz.com/learn/seo/robotstxt)
 1. **OK** CNAME from 1st site
-1. 
+1. 404 page (flashing lightbulb with director logo)
+1. https://gridsome.org/plugins/@gridsome/plugin-google-analytics
+1. https://gridsome.org/plugins/@gridsome/plugin-sitemap
+
+## Todo
+1. Plugin critical https://gridsome.org/plugins/@gridsome/plugin-critical
+ 
+
