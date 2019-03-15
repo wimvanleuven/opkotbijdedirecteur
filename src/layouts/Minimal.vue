@@ -1,6 +1,5 @@
 <template>
-
-    <div class="vh-100 vw-100 min-vh-100">
+    <main role="main" class="container" id="top">
 
         <header class="header">
             <strong>
@@ -15,16 +14,19 @@
         <!-- ===============================================-->
         <!--    Main Content-->
         <!-- ===============================================-->
-        <main role="main" class="container-fluid m-0 p-0" id="top">
+        <div id="content">
+
+            <!--<Preloader/>-->
+
             <slot></slot>
-        </main>
+
+        </div>
         <!-- ===============================================-->
         <!--    End of Main Content-->
         <!-- ===============================================-->
 
-        <Links></Links>
         <Footer></Footer>
-    </div>
+    </main>
 
 </template>
 
@@ -42,9 +44,9 @@
 
 <static-query>
     query {
-        metaData {
-            siteName
-        }
+    metaData {
+    siteName
+    }
     }
 </static-query>
 

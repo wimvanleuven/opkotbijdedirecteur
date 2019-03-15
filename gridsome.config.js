@@ -10,4 +10,4 @@ module.exports = {
   siteUrl: 'https://opkotbijdedirecteur.be',
   titleTemplate: '%s | okbdd',
   plugins: []
-}
+};
