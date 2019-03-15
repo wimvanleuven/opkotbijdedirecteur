@@ -9,3 +9,7 @@ Install your development environment
 1. `gridsome develop` to start local dev server at `http://localhost:8080`
 1. Happy coding 🎉🙌
 
+## Todo
+1. robot.txt (https://moz.com/learn/seo/robotstxt)
+1. **OK** CNAME from 1st site
+1. 
