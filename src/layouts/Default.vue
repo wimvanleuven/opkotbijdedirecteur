@@ -1,6 +1,6 @@
 <template>
 
-    <div class="vh-100 vw-100 min-vh-100">
+    <div class="vh-100 vw-100" :class="{ 'min-vh-100': fullscreen }">
 
         <header class="header">
             <strong>
@@ -15,7 +15,7 @@
         <!-- ===============================================-->
         <!--    Main Content-->
         <!-- ===============================================-->
-        <main role="main" class="container-fluid m-0 p-0" id="top">
+        <main role="main" class="container-fluid m-0 p-0" :class="{ 'min-vh-100': fullscreen }" id="top">
             <slot></slot>
         </main>
         <!-- ===============================================-->
@@ -28,17 +28,20 @@
 
 </template>
 
+
 <script>
     import Preloader from '~/components/Preloader.vue'
     import Links from '~/components/Links.vue'
     import Footer from '~/components/Footer.vue'
 
     export default {
+        props: ['fullscreen'],
         components: {
             Preloader, Links, Footer
         }
     }
 </script>
+
 
 <static-query>
     query {
@@ -47,6 +50,7 @@
         }
     }
 </static-query>
+
 
 <style>
 </style>
