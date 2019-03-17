@@ -1,20 +1,38 @@
 <template>
     <Layout :fullscreen="true">
 
-        <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-        <g-image alt="Example image" src="~/favicon.png" width="135"/>
+        <!-- ============================================-->
+        <!-- <section> begin ============================-->
+        <section class="py-0 text-center" id="bigcartel-header">
 
-        <h1>Hello, world!</h1>
+            <div class="bg-holder overlay overlay-1" >
+                <!--<div class="bg-youtube" data-property='{"videoURL":"https://www.youtube.com/watch?v=iZmwFlg8zqA","startAt":0,"stopAt":120,"mute":true,"showYTLogo":false}'></div>-->
+                <g-image src="@/assets/img/headers/header-1.jpg"></g-image>
+            </div>
+            <!--/.bg-holder-->
 
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et
-            iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-        </p>
+            <div class="container">
+                <div class="row min-vh-100 justify-content-center align-items-center py-8">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="@/assets/img/bigcartel.png" alt=""/>
+                        <div class="overflow-hidden mb-4">
+                            <p class="text-white px-lg-6 text-sans-serif">Join nearly a million makers, designers, marketers, and business owners using sparrow to build their outstanding websites.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="indicator indicator-down" href="#target-down"><span class="indicator-arrow indicator-arrow-one"></span><span class="indicator-arrow indicator-arrow-two"></span></a>
+            </div>
+            <!-- end of .container-->
 
-        <p class="home-links">
-            <a href="https://gridsome.org/docs" target="_blank" rel="noopener">Gridsome Docs</a>
-            <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-        </p>
+        </section>
+
+        <!-- scroll target to move next section to the top of the screen on clicking arrows down -->
+        <div id="target-down"></div>
+        <!-- <section> close ============================-->
+        <!-- ============================================-->
+
+
+
 
     </Layout>
 </template>

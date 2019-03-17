@@ -14,7 +14,7 @@
                 </div>
                 <div class="col-lg-4 text-lg-left mt-4 mt-lg-0">
                     <p class="fs--1 text-uppercase ls font-weight-bold mb-0">
-                        Copyright &copy; 2018
+                        Copyright &copy; 2018 - {{ new Date().getFullYear() }}
                     </p>
                 </div>
                 <div class="col-lg-4 text-lg-right order-lg-2 mt-2 mt-lg-0">

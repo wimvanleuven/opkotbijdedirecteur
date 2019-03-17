@@ -9,5 +9,8 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout);
 
   // html attrs
-  head.htmlAttrs = { lang: 'nl' }
+  head.htmlAttrs = { lang: 'nl' };
+
+  // fonts
+  head.link.push({ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Poiret+One%7cPT+Mono%7cPT+Serif:400,400i%7cLato:100,300,400,700,800,900' });
 }

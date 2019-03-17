@@ -1,26 +1,16 @@
 <template>
-    <main role="main" class="container" id="top">
+    <main role="main" class="container">
 
-        <header class="header">
-            <strong>
-                <g-link to="/">{{ $static.metaData.siteName }}</g-link>
-            </strong>
-            <nav class="nav">
-                <g-link class="nav__link" to="/">Home</g-link>
-                <g-link class="nav__link" to="/about">About</g-link>
-            </nav>
-        </header>
+        <Header></Header>
 
         <!-- ===============================================-->
         <!--    Main Content-->
         <!-- ===============================================-->
-        <div id="content">
-
-            <!--<Preloader/>-->
+        <main role="main" class="container-fluid m-0 p-0" :class="{ 'min-vh-100': fullscreen }" id="top">
 
             <slot></slot>
 
-        </div>
+        </main>
         <!-- ===============================================-->
         <!--    End of Main Content-->
         <!-- ===============================================-->
@@ -31,13 +21,13 @@
 </template>
 
 <script>
-    import Preloader from '~/components/Preloader.vue'
-    import Links from '~/components/Links.vue'
+    import Header from '~/components/Header.vue'
     import Footer from '~/components/Footer.vue'
 
     export default {
+        props: ['fullscreen'],
         components: {
-            Preloader, Links, Footer
+            Header, Footer
         }
     }
 </script>
