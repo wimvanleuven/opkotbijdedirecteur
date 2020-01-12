@@ -3,20 +3,21 @@
 
         <!-- ============================================-->
         <!-- <section> begin ============================-->
-        <section class="py-0 text-center" id="bigcartel-header">
+        <section class="py-0 text-center" id="index-header">
 
             <div class="bg-holder overlay overlay-1" >
                 <!--<div class="bg-youtube" data-property='{"videoURL":"https://www.youtube.com/watch?v=iZmwFlg8zqA","startAt":0,"stopAt":120,"mute":true,"showYTLogo":false}'></div>-->
-                <g-image src="@/assets/img/headers/header-1.jpg"></g-image>
+                <g-image src="@/assets/img/header-index.jpg"></g-image>
             </div>
             <!--/.bg-holder-->
 
             <div class="container">
                 <div class="row min-vh-100 justify-content-center align-items-center py-8">
                     <div class="col-lg-7">
-                        <img class="img-fluid" src="@/assets/img/bigcartel.png" alt=""/>
+                        <img class="img-fluid" style="border-width: 4px !important" src="@/assets/img/logo-circle-white.svg" alt="opkotbijdedirecteur" width="200"/>
+                        <p class="title-brand display-4 text-uppercase my-2">op kot bij de directeur</p>
                         <div class="overflow-hidden mb-4">
-                            <p class="text-white px-lg-6 text-sans-serif">Join nearly a million makers, designers, marketers, and business owners using sparrow to build their outstanding websites.</p>
+                            <p class="text-white px-lg-6 text-sans-serif">dat is op kot gaan in een historisch kader <br/>met alle luxe en comfort <br/>in <font-awesome class="text-danger mx-1 fs--1" :icon="['fas', 'heart']"></font-awesome>je Leuven.</p>
                         </div>
                     </div>
                 </div>

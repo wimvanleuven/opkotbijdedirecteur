@@ -24,7 +24,7 @@
 /* Decoration */
 .text-underline {
   text-decoration: underline;
-  text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
 }
 
 .text-smallcaps{ font-variant: small-caps; }
