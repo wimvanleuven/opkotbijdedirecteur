@@ -2,7 +2,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-sparrow" :style="{ backgroundColor: background }">
         <div class="container">
-            <a class="navbar-brand row" href="index.html">
+            <a class="navbar-brand row" href="/">
                 <img class="align-middle" src="@/assets/img/logo-white.svg" alt="opkotbijdedirecteur" height="35" />
                 <h1 class="text-uppercase align-middle mx-3">op kot bij de directeur</h1>
             </a>
