@@ -1,50 +1,55 @@
 <template>
-    <Layout :fullscreen="true">
-
-        <!-- ============================================-->
-        <!-- <section> begin ============================-->
-        <section class="py-0 text-center" id="index-header">
-
-            <div class="bg-holder overlay overlay-1" >
-                <!--<div class="bg-youtube" data-property='{"videoURL":"https://www.youtube.com/watch?v=iZmwFlg8zqA","startAt":0,"stopAt":120,"mute":true,"showYTLogo":false}'></div>-->
-                <g-image src="@/assets/img/header-index.jpg"></g-image>
-            </div>
-            <!--/.bg-holder-->
-
+    <DefaultLayout class="wrapper">
+        <parallax class="section page-header header-filter" :style="headerStyle">
             <div class="container">
-                <div class="row min-vh-100 justify-content-center align-items-center py-8">
-                    <div class="col-lg-7">
-                        <img class="img-fluid" style="border-width: 4px !important" src="@/assets/img/logo-circle-white.svg" alt="opkotbijdedirecteur" width="200"/>
-                        <p class="title-brand display-4 text-uppercase my-2">op kot bij de directeur</p>
-                        <div class="overflow-hidden mb-4">
-                            <p class="text-white px-lg-6 text-sans-serif">dat is op kot gaan in een historisch kader <br/>met alle luxe en comfort <br/>in <font-awesome class="text-danger mx-1 fs--1" :icon="['fas', 'heart']"></font-awesome>je Leuven.</p>
-                        </div>
+                <div class="md-layout">
+                    <div class="md-layout-item md-size-50 md-small-size-70 md-xsmall-size-100">
+                        <h1 class="title">Your Story Starts With Us.</h1>
+                        <h4>
+                            Every landing page needs a small description after the big bold
+                            title, that's why we added this text here. Add here all the
+                            information that can make you or your product create the first
+                            impression.
+                        </h4>
+                        <br />
+                        <button
+                                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                                class="md-success md-lg"
+                                target="_blank"
+                        ><i class="fas fa-play"></i> Watch video</button
+                        >
                     </div>
                 </div>
-                <a class="indicator indicator-down" href="#target-down"><span class="indicator-arrow indicator-arrow-one"></span><span class="indicator-arrow indicator-arrow-two"></span></a>
             </div>
-            <!-- end of .container-->
-
-        </section>
-
-        <!-- scroll target to move next section to the top of the screen on clicking arrows down -->
-        <div id="target-down"></div>
-        <!-- <section> close ============================-->
-        <!-- ============================================-->
-
-
-
-
-    </Layout>
+        </parallax>
+    </DefaultLayout>
 </template>
 
 <script>
+    import DefaultLayout from '~/layouts/Default.vue'
+    import Parallax from '~/components/Parallax.vue'
+
     export default {
         metaInfo: {
-            title: 'Hello, world!'
+            title: 'Home'
+        },
+        bodyClass: "landing-page",
+        components: {
+            DefaultLayout,
+            Parallax
+        },
+        props: {
+            header: {
+                type: String,
+                default: require("~/assets/img/bg7.jpg")
+            }
+        },
+        computed: {
+            headerStyle() {
+                return {
+                    backgroundImage: `url(${this.header})`
+                };
+            }
         }
     }
 </script>
-
-<style>
-</style>
