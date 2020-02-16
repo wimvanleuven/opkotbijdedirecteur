@@ -30,7 +30,7 @@
         </ul>
       </nav>
       <div class="copyright">
-        &copy; 2018 - {{ year }}
+        Copyright &copy; 2018 - {{ year }}
       </div>
     </div>
   </footer>
