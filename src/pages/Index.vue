@@ -1,5 +1,5 @@
 <template>
-    <DefaultLayout class="wrapper">
+    <DefaultLayout>
         <parallax class="section page-header header-filter" :style="headerStyle">
             <div class="container">
                 <div class="md-layout">
@@ -16,7 +16,7 @@
                                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                                 class="md-success md-lg"
                                 target="_blank"
-                        ><i class="fas fa-play"></i> Watch video</button
+                        ><i class="fas fa-play"/> Watch video</button
                         >
                     </div>
                 </div>
@@ -26,6 +26,7 @@
 </template>
 
 <script>
+    import MainNavbar from '~/layouts/MainNavbar.vue'
     import DefaultLayout from '~/layouts/Default.vue'
     import Parallax from '~/components/Parallax.vue'
 
@@ -33,9 +34,10 @@
         metaInfo: {
             title: 'Home'
         },
-        bodyClass: "landing-page",
+        bodyClass: "login-page",
         components: {
             DefaultLayout,
+            MainNavbar,
             Parallax
         },
         props: {

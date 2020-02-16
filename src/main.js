@@ -1,14 +1,19 @@
-// This is the main.js file. Import global CSS and scripts here.
-// The Client API can be used here. Learn more: gridsome.org/docs/client-api
 import VueMaterial from "vue-material";
 import VueLazyload from "vue-lazyload";
 import VueCarousel from "vue-carousel";
 import { VPopover } from "v-tooltip";
 import { directive as vClickOutside } from "vue-clickaway";
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { config, library } from '@fortawesome/fontawesome-svg-core'
+import { faFacebookSquare, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
+import '@fortawesome/fontawesome-svg-core/styles.css'
 import "vue-material/dist/vue-material.min.css";
 import "@/assets/scss/material-kit.scss";
 import "@/assets/demo.css";
+
+config.autoAddCss = false;
+library.add(faFacebookSquare, faInstagram, faTwitter);
 
 export default function (Vue, { router, head, isClient }) {
   // conf
@@ -25,6 +30,7 @@ export default function (Vue, { router, head, isClient }) {
 
   // components
   Vue.component("v-popover", VPopover);
+  Vue.component('font-awesome', FontAwesomeIcon);
 
   // directives
   Vue.directive("click-outside", vClickOutside);
