@@ -122,17 +122,6 @@
               </li>
 
               <md-list-item
-                href="https://twitter.com/CreativeTim"
-                target="_blank"
-              >
-                <!--i class="fab fa-twitter"></i-->
-                <font-awesome :icon="['fab', 'twitter']" class="fab"/>
-                <p class="hidden-lg">Twitter</p>
-                <md-tooltip md-direction="bottom"
-                  >Follow us on Twitter</md-tooltip
-                >
-              </md-list-item>
-              <md-list-item
                 href="https://www.facebook.com/CreativeTim"
                 target="_blank"
               >
