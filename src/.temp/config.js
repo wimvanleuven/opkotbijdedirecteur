@@ -3,5 +3,6 @@ export default {
   "pathPrefix": "",
   "titleTemplate": "%s | okbdd",
   "siteUrl": "https://opkotbijdedirecteur.be",
-  "version": "0.7.12"
+  "version": "0.7.13",
+  "catchLinks": true
 }

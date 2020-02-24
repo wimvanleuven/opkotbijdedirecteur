@@ -1,11 +1,12 @@
 import VueMaterial from "vue-material";
 import VueLazyload from "vue-lazyload";
 import VueCarousel from "vue-carousel";
+import VueTypedJs from 'vue-typed-js';
 import { VPopover } from "v-tooltip";
 import { directive as vClickOutside } from "vue-clickaway";
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { config, library } from '@fortawesome/fontawesome-svg-core'
-import { faFacebookSquare, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faFacebookSquare, faInstagram, faFacebookMessenger } from '@fortawesome/free-brands-svg-icons'
 
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import "vue-material/dist/vue-material.min.css";
@@ -13,7 +14,7 @@ import "@/assets/scss/material-kit.scss";
 import "@/assets/demo.css";
 
 config.autoAddCss = false;
-library.add(faFacebookSquare, faInstagram, faTwitter);
+library.add(faFacebookSquare, faInstagram, faFacebookMessenger);
 
 export default function (Vue, { router, head, isClient }) {
   // conf
@@ -38,6 +39,7 @@ export default function (Vue, { router, head, isClient }) {
   // setup
   Vue.use(VueMaterial);
   Vue.use(VueCarousel);
+  Vue.use(VueTypedJs);
   Vue.use(VueLazyload, {
     observer: true,
     // optional

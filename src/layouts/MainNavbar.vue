@@ -120,29 +120,6 @@
                   </div>
                 </a>
               </li>
-
-              <md-list-item
-                href="https://www.facebook.com/CreativeTim"
-                target="_blank"
-              >
-                <!--i class="fab fa-facebook-square"></i-->
-                <font-awesome :icon="['fab', 'facebook-square']" class="fab"/>
-                <p class="hidden-lg">Facebook</p>
-                <md-tooltip md-direction="bottom"
-                  >Like us on Facebook</md-tooltip
-                >
-              </md-list-item>
-              <md-list-item
-                href="https://www.instagram.com/CreativeTimOfficial"
-                target="_blank"
-              >
-                <!--i class="fab fa-instagram"></i-->
-                <font-awesome :icon="['fab', 'instagram']" class="fab"/>
-                <p class="hidden-lg">Instagram</p>
-                <md-tooltip md-direction="bottom"
-                  >Follow us on Instagram</md-tooltip
-                >
-              </md-list-item>
             </md-list>
           </div>
         </div>

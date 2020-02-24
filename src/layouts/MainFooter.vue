@@ -7,25 +7,31 @@
     <div class="container">
       <nav>
         <ul>
-          <li>
-            <a href="/legal/terms">
-              Terms
+          <md-list-item>
+            <a href="https://facebook.com/opkotbijdedirecteur/" target="_blank">
+              <font-awesome :icon="['fab', 'facebook-square']" class="fab"/>
+              <p class="hidden-lg">Facebook</p>
+              <md-tooltip md-direction="top">Like us on Facebook</md-tooltip>
             </a>
-          </li>
-          <li>
-            <a href="/legal/privacy">
-              Privacy
+          </md-list-item>
+          <md-list-item>
+            <a href="https://instagram.com/opkotbijdedirecteur/" target="_blank">
+              <font-awesome :icon="['fab', 'instagram']" class="fab"/>
+              <p class="hidden-lg">Instagram</p>
+              <md-tooltip md-direction="bottom">Follow us on Instagram</md-tooltip>
             </a>
-          </li>
-          <li>
-            <a href="/legal/cookies">
-              Cookies
+          </md-list-item>
+          <md-list-item>
+            <a href="https://messenger.com/t/opkotbijdedirecteur/" target="_blank">
+              <font-awesome :icon="['fab', 'facebook-messenger']" class="fab"/>
+              <p class="hidden-lg">Messenger</p>
+              <md-tooltip md-direction="bottom">Text us on Messenger</md-tooltip>
             </a>
-          </li>
+          </md-list-item>
         </ul>
       </nav>
       <div class="copyright">
-        &copy; 2018 - {{ year }}
+        Copyright &copy; 2018 - {{ year }}. <a class="" href="/legal">Privacy & Terms</a>
       </div>
     </div>
   </footer>

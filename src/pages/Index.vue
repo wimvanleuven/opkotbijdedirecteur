@@ -3,21 +3,16 @@
         <parallax class="section page-header header-filter" :style="headerStyle">
             <div class="container">
                 <div class="md-layout">
-                    <div class="md-layout-item md-size-50 md-small-size-70 md-xsmall-size-100">
-                        <h1 class="title">Your Story Starts With Us.</h1>
-                        <h4>
-                            Every landing page needs a small description after the big bold
-                            title, that's why we added this text here. Add here all the
-                            information that can make you or your product create the first
-                            impression.
-                        </h4>
-                        <br />
-                        <button
-                                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                                class="md-success md-lg"
-                                target="_blank"
-                        ><i class="fas fa-play"/> Watch video</button
-                        >
+                    <div class="md-layout-item md-size-70 md-small-size-70 md-xsmall-size-100">
+                        <h1 class="title">opkotbijdedirecteur</h1>
+                        <h2>
+                            <vue-typed-js
+                                :strings="catchphrases"
+                                :loop="true"
+                            >
+                                <span class="typing" />
+                            </vue-typed-js>
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -47,6 +42,13 @@
             }
         },
         computed: {
+            catchphrases() {
+                return [
+                    "In een historisch kader.",
+                    "In alle luxe en comfort.",
+                    "In <red>♥</red>je Leuven."
+                ]
+            },
             headerStyle() {
                 return {
                     backgroundImage: `url(${this.header})`
@@ -55,3 +57,9 @@
         }
     }
 </script>
+
+<style>
+red {
+    color: red
+}
+</style>
