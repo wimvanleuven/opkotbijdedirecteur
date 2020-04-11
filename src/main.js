@@ -7,6 +7,7 @@ import { directive as vClickOutside } from "vue-clickaway";
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { config, library } from '@fortawesome/fontawesome-svg-core'
 import { faFacebookSquare, faInstagram, faFacebookMessenger } from '@fortawesome/free-brands-svg-icons'
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import "vue-material/dist/vue-material.min.css";
@@ -14,7 +15,7 @@ import "@/assets/scss/material-kit.scss";
 import "@/assets/demo.css";
 
 config.autoAddCss = false;
-library.add(faFacebookSquare, faInstagram, faFacebookMessenger);
+library.add(faFacebookSquare, faInstagram, faFacebookMessenger, faMapMarkerAlt);
 
 export default function (Vue, { router, head, isClient }) {
   // conf

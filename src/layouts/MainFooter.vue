@@ -28,6 +28,13 @@
               <md-tooltip md-direction="bottom">Text us on Messenger</md-tooltip>
             </a>
           </md-list-item>
+          <md-list-item>
+            <a href="https://goo.gl/maps/ZeQDoiy3RCFApYV4A/" target="_blank">
+              <font-awesome :icon="['fas', 'map-marker-alt']" class="fab"/>
+              <p class="hidden-lg">Google Maps</p>
+              <md-tooltip md-direction="bottom">Find us on Google Maps</md-tooltip>
+            </a>
+          </md-list-item>
         </ul>
       </nav>
       <div class="copyright">
