@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="md-layout">
                     <div class="md-layout-item md-size-70 md-small-size-70 md-xsmall-size-100">
-                        <h1 class="title">opkotbijdedirecteur</h1>
+                        <h1 class="title">op kot bij de directeur</h1>
                         <vue-typed-js
                                 :strings="catchphrases"
                                 :loop="true"
