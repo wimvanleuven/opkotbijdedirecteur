@@ -1,7 +1,7 @@
 <template>
     <div id="material-kit">
         <div :class="{ 'nav-open': NavbarStore.showNavbar }">
-            <MainNavbar/>
+<!--            <MainNavbar/>-->
             <div>
                 <slot/>
             </div>
@@ -11,13 +11,13 @@
 </template>
 
 <script>
-    import MainNavbar from "./MainNavbar";
+    // import MainNavbar from "./MainNavbar";
     import MainFooter from './MainFooter.vue'
 
     export default {
         props: ['fullscreen'],
         components: {
-            MainNavbar,
+            // MainNavbar,
             MainFooter
         }
     }
