@@ -31,7 +31,7 @@
         </ul>
       </nav>
       <div class="copyright">
-        Copyright &copy; 2018 - {{ year }}. <a class="" href="/legal">Privacy & Terms</a>
+        &copy; 2018 - {{ year }}
       </div>
     </div>
   </footer>
