@@ -38,7 +38,7 @@
         props: {
             header: {
                 type: String,
-                default: require("~/assets/img/bg7.jpg")
+                default: require("~/assets/img/gevel_zonnige_dag_met_wolken_2.jpg")
             }
         },
         computed: {
@@ -46,7 +46,7 @@
                 return [
                     "Da's op kot gaan in een historisch kader",
                     "Da's op kot gaan in alle luxe en comfort",
-                    "Da's op kot gaan in <red>♥</red>je Leuven"
+                    "Da's op kot gaan in <span class='red'>♥</span>je Leuven"
                 ]
             },
             headerStyle() {
@@ -59,7 +59,7 @@
 </script>
 
 <style>
-    red {
+    .red {
         color: red
     }
 </style>
