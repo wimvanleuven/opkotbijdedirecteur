@@ -51,7 +51,8 @@
             },
             headerStyle() {
                 return {
-                    backgroundImage: `url(${this.header})`
+                    backgroundImage: `url(${this.header})`,
+                    backgroundPosition: `center top`
                 };
             }
         }
