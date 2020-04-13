@@ -3,7 +3,7 @@
 
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
-const path = require('path')
+const path = require('path');
 
 function addStyleResource (rule) {
   rule.use('style-resource')
@@ -18,7 +18,7 @@ function addStyleResource (rule) {
 
 module.exports = {
   siteName: 'opkotbijdedirecteur',
-  siteDescription: 'opkotbijdedirecteur is op kot gaan in een historisch kader met alle luxe en comfort in ♥︎je Leuven',
+  siteDescription: 'opkotbijdedirecteur is op kot gaan in een historisch kader met alle luxe en comfort in hartje Leuven',
   siteUrl: 'https://opkotbijdedirecteur.be',
   titleTemplate: '%s | okbdd',
   plugins: []
