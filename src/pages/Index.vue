@@ -8,9 +8,11 @@
                         <vue-typed-js
                                 :strings="catchphrases"
                                 :loop="true"
+                                :startDelay="1000"
+                                :loopCount="3"
                         >
-                            <h2>
-                                <span class="typing"/>
+                            <h2 id="typed-banner">
+                                <span class="typing double-height"/>
                             </h2>
                         </vue-typed-js>
                     </div>
@@ -56,6 +58,10 @@
 </script>
 
 <style>
+    #typed-banner {
+        /* to preven the banner from jumping around on small screens */
+        min-height: 3em;
+    }
     .red {
         color: red
     }
