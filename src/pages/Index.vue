@@ -21,9 +21,7 @@
 </template>
 
 <script>
-    import MainNavbar from '~/layouts/MainNavbar.vue'
     import DefaultLayout from '~/layouts/Default.vue'
-    import Parallax from '~/components/Parallax.vue'
 
     export default {
         metaInfo: {
@@ -31,9 +29,7 @@
         },
         bodyClass: "login-page",
         components: {
-            DefaultLayout,
-            MainNavbar,
-            Parallax
+            DefaultLayout
         },
         props: {
             header: {
