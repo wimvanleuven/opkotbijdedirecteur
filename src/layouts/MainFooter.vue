@@ -38,7 +38,7 @@
         </ul>
       </nav>
       <div class="copyright">
-        &copy; 2018 - {{ year }}
+        opkotbijdedirecteur &copy; 2018 - {{ year }}
       </div>
     </div>
   </footer>

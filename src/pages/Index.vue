@@ -2,19 +2,26 @@
     <DefaultLayout>
         <parallax class="section page-header header-filter" :style="headerStyle">
             <div class="container">
-                <div class="md-layout">
-                    <div class="md-layout-item md-size-70 md-small-size-70 md-xsmall-size-100">
-                        <h1 class="title">op kot bij de directeur</h1>
-                        <vue-typed-js
-                                :strings="catchphrases"
-                                :loop="true"
-                                :startDelay="1000"
-                                :loopCount="3"
-                        >
-                            <h2 id="typed-banner">
-                                <span class="typing double-height"/>
-                            </h2>
-                        </vue-typed-js>
+                <div class="md-layout md-alignment-center-center">
+                    <div class="md-layout-item md-size-35 md-small-size-35 md-xsmall-size-60">
+                        <g-image src="~/assets/img/logo/logo-white.svg"/>
+                    </div>
+                </div>
+                <div class="md-layout md-alignment-center">
+                    <div class="md-layout-item md-size-70 md-small-size-75 md-xsmall-size-100">
+                        <div class="text-center">
+                            <h1 class="title index-title">op kot bij de directeur</h1>
+                            <vue-typed-js
+                                  :strings="catchphrases"
+                                  :loop="true"
+                                  :startDelay="1000"
+                                  :smartBackspace="false"
+                            >
+                                <h2 id="typed-banner">
+                                    da's op kot gaan <span class="typing"/>
+                                </h2>
+                            </vue-typed-js>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -42,9 +49,9 @@
         computed: {
             catchphrases() {
                 return [
-                    "Da's op kot gaan in een historisch kader",
-                    "Da's op kot gaan in alle luxe en comfort",
-                    "Da's op kot gaan in <span class='red'>♥</span>je Leuven"
+                    " in een historisch kader",
+                    " in alle luxe en comfort",
+                    " in <span style='color:red'>♥</span>je Leuven"
                 ]
             },
             headerStyle() {
@@ -57,12 +64,15 @@
     }
 </script>
 
-<style>
+<style scoped>
     #typed-banner {
         /* to preven the banner from jumping around on small screens */
         min-height: 3em;
+        width: 100%;
     }
-    .red {
-        color: red
-    }
+
+    /*.container:only-of-type {*/
+    /*    padding-top: 0 !important;*/
+    /*    padding-bottom: 0 !important;*/
+    /*}*/
 </style>
