@@ -31,6 +31,7 @@
 
 <script>
     import DefaultLayout from "~/layouts/Default.vue"
+    import Parallax from '~/components/Parallax.vue'
 
     export default {
         metaInfo: {
@@ -38,7 +39,8 @@
         },
         bodyClass: "login-page",
         components: {
-            DefaultLayout
+            DefaultLayout,
+            Parallax
         },
         props: {
             header: {

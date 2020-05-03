@@ -1,6 +1,5 @@
 import VueMaterial from "vue-material";
 import VueLazyload from "vue-lazyload";
-import VueCarousel from "vue-carousel";
 import VueTypedJs from 'vue-typed-js';
 import { VPopover } from "v-tooltip";
 import { directive as vClickOutside } from "vue-clickaway";
@@ -39,7 +38,6 @@ export default function (Vue, { router, head, isClient }) {
 
   // setup
   Vue.use(VueMaterial);
-  Vue.use(VueCarousel);
   Vue.use(VueTypedJs);
   Vue.use(VueLazyload, {
     observer: true,
