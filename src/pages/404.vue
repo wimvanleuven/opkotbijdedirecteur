@@ -10,15 +10,14 @@
                 <div class="md-layout md-alignment-center">
                     <div class="md-layout-item md-size-70 md-small-size-75 md-xsmall-size-100">
                         <div class="text-center">
-                            <h1 class="title index-title">op kot bij de directeur</h1>
+                            <h1 class="title index-title">404</h1>
                             <vue-typed-js
-                                  :strings="catchphrases"
-                                  :loop="true"
-                                  :startDelay="1000"
-                                  :smartBackspace="false"
+                                    :strings="catchphrases"
+                                    :loop="true"
+                                    :startDelay="1000"
                             >
                                 <h2 id="typed-banner">
-                                    da's op kot gaan <span class="typing"/>
+                                    <span class="typing"/>
                                 </h2>
                             </vue-typed-js>
                         </div>
@@ -49,9 +48,9 @@
         computed: {
             catchphrases() {
                 return [
-                    " in een historisch kader",
-                    " in alle luxe en comfort",
-                    " in <span style='color:red'>♥</span>je Leuven"
+                    "page not found",
+                    "pagina niet gevonden",
+                    "page non trouvée ",
                 ]
             },
             headerStyle() {
