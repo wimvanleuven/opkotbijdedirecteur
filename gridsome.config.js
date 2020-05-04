@@ -20,7 +20,6 @@ module.exports = {
   siteName: 'opkotbijdedirecteur',
   siteDescription: 'opkotbijdedirecteur is op kot gaan in een historisch kader met alle luxe en comfort in hartje Leuven',
   siteUrl: 'https://opkotbijdedirecteur.be',
-  pathPrefix: '/opkotbijdedirecteur',
   titleTemplate: '%s | opkotbijdedirecteur',
   plugins: [{
       use: 'gridsome-plugin-robots-txt',
