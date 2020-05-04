@@ -3,7 +3,7 @@
         <parallax class="section page-header header-filter" :style="headerStyle">
             <div class="container">
                 <div class="md-layout md-alignment-center-center">
-                    <div class="md-layout-item md-size-35 md-small-size-35 md-xsmall-size-60">
+                    <div class="md-layout-item md-size-30 md-small-size-30 md-xsmall-size-60">
                         <g-image src="~/assets/img/logo/logo-white.svg"/>
                     </div>
                 </div>

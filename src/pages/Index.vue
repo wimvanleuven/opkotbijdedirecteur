@@ -1,31 +1,33 @@
 <template>
     <DefaultLayout>
-        <parallax class="section page-header header-filter" :style="headerStyle">
-            <div class="container">
-                <div class="md-layout md-alignment-center-center">
-                    <div class="md-layout-item md-size-35 md-small-size-35 md-xsmall-size-60">
-                        <g-image src="~/assets/img/logo/logo-white.svg"/>
+        <div class="wrapper">
+            <parallax class="section page-header header-filter" :style="headerStyle">
+                <div class="container">
+                    <div class="md-layout md-alignment-center-center">
+                        <div class="md-layout-item md-size-30 md-small-size-30 md-xsmall-size-60">
+                            <g-image src="~/assets/img/logo/logo-white.svg"/>
+                        </div>
                     </div>
-                </div>
-                <div class="md-layout md-alignment-center">
-                    <div class="md-layout-item md-size-70 md-small-size-75 md-xsmall-size-100">
-                        <div class="text-center">
-                            <h1 class="title index-title">op kot bij de directeur</h1>
-                            <vue-typed-js
-                                  :strings="catchphrases"
-                                  :loop="true"
-                                  :startDelay="1000"
-                                  :smartBackspace="false"
-                            >
-                                <h2 id="typed-banner">
-                                    da's op kot gaan <span class="typing"/>
-                                </h2>
-                            </vue-typed-js>
+                    <div class="md-layout md-alignment-center">
+                        <div class="md-layout-item md-size-70 md-small-size-75 md-xsmall-size-100">
+                            <div class="text-center">
+                                <h1 class="title index-title">op kot bij de directeur</h1>
+                                <vue-typed-js
+                                        :strings="catchphrases"
+                                        :loop="true"
+                                        :startDelay="1000"
+                                        :smartBackspace="false"
+                                >
+                                    <h2 id="typed-banner">
+                                        da's op kot gaan <span class="typing"/>
+                                    </h2>
+                                </vue-typed-js>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </parallax>
+            </parallax>
+        </div>
     </DefaultLayout>
 </template>
 
