@@ -1,3 +1,4 @@
+import VueGtag from "vue-gtag";
 import VueMaterial from "vue-material";
 import VueLazyload from "vue-lazyload";
 import VueTypedJs from 'vue-typed-js';
@@ -37,6 +38,9 @@ export default function (Vue, { router, head, isClient }) {
   Vue.directive("click-outside", vClickOutside);
 
   // setup
+  Vue.use(VueGtag, {
+    config: { id: 'UA-127335862-1' },
+  }, router)
   Vue.use(VueMaterial);
   Vue.use(VueTypedJs);
   Vue.use(VueLazyload, {
