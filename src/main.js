@@ -12,7 +12,6 @@ import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import "vue-material/dist/vue-material.min.css";
 import "@/assets/scss/material-kit.scss";
-import "@/assets/demo.css";
 
 config.autoAddCss = false;
 library.add(faFacebookSquare, faInstagram, faFacebookMessenger, faMapMarkerAlt);

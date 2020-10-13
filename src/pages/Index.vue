@@ -27,6 +27,20 @@
                     </div>
                 </div>
             </parallax>
+            <div class="main main-raised">
+                <div class="section">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-md8 ml-auto mr-auto">
+                                <h2 class="title">op kot in alle luxe en comfort</h2>
+                                <h5>
+
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </DefaultLayout>
 </template>
@@ -39,7 +53,7 @@
         metaInfo: {
             title: "Home"
         },
-        bodyClass: "login-page",
+        bodyClass: "landing-page",
         components: {
             DefaultLayout,
             Parallax
